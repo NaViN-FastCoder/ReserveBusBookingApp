@@ -25,6 +25,117 @@
     width:400px;
     height:700px;
 }
+.card{
+    padding:2rem;
+    border-radius: 10px;
+    background-color: cadetblue;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: auto;
+   
+}
+ .card h1{
+    display:flex;
+    align-items: center;
+    left:10rem;
+    margin-left: 13rem;
+    
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color:pink;
+}
+.card h2{
+    display: flex;
+    flex-direction: row;
+    padding :20px;
+gap: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color:black;
+}
+.departure {
+  padding-right: 20px; /* Adjust the value as needed */
+}
+
+.category {
+  padding-left: 20px; /* Adjust the value as needed */
+}
+
+.arrival {
+  padding-right: 20px; /* Adjust the value as needed */
+}
+
+.anemities {
+  padding-left: 20px; /* Adjust the value as needed */
+}
+
+
+
+.card h3{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display:flex;
+    align-items: left;
+
+}
+.card h4{
+    /* text-align: right; */
+display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 15rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color:red
+}
+.card h5{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: right;
+
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+    
+    /* display: flex;
+    justify-content: center;
+  align-items: right;
+    font-size: 1.5rem;
+    text-align: right;
+     */
+    /* text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding:10px 10px;
+    top:0;
+    right:0; */
+    /* display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding:10px 10px; */
+
+    }
+
 /* .login-box {
     position: absolute;
     top: 50%;
@@ -51,4 +162,129 @@
   } */
   
   
+  #modal{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 20px;
+
+
+  }
+  .book{
+    border:none;
+    border-radius:10px;
+    border-style: dotted;
+    background-color: red;
+
+  }
+  .book :hover{
+    background-color: green;
+  }
+
+  .close-button{
+    position: absolute;
+    top:10px;
+    right:10px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    
+  }
+  .close-button span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .seatcard{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    gap:5px;
+    margin-bottom: 20px;
+  }
   
+  .seatcard button{
+    width: 50px; 
+    height: 50px;
+  }
+  .seatcard > :nth-child(16n + 9) {
+    margin-bottom: 20px; /* Adjust the gap size as needed */
+  }
+  /* .confirmseat{
+   margin: auto;
+   background-color: #ff5643;
+   color: white;
+   border:none;
+   padding: 10px 20px;
+   cursor: pointer;
+  } */
+  .confirmseat :hover{
+    transform: scale(1.05);
+    color:red
+  }
+
+/* .card h1 */
+.middle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: red;
+}
+
+.card .left {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: left;
+}
+
+.right {
+  display: flex;
+  margin-right: 2rem;
+  align-items: right;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: red;
+}
+
+.card h5 {
+  
+  text-align: right;
+  font-size: 1.5rem;
+  
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 10rem;
+}
+h1{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 10px;
+}

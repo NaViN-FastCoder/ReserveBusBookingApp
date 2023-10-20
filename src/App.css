@@ -1,20 +1,84 @@
+/* 
+
 .App {
   text-align: center;
+  height:1200px;
+  width: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+*/
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.text {
+  display:flex;
+  animation:move 1s infinite;
+  transition:move .8s ease-in;
+ position:absolute;
+  color:yellow;
+  top:30px;
+  left:20px;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); 
+   }
+  100% {
+    transform: translateX(0);
+  }
+}
+.App{
+  height: 100px;
+  width:100%;
+  margin-top:0;
+}
+/* App.css */
+ .Header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34; /* Add background color */
+  z-index: 100; }/* 
+  
+  
+ 
+.circle{
+  border:2px solid palevioletred;
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+  background-color: black;
+  animation:  rotate 0.3s linear infinite 1s;
+  position: absolute;
+   top: 350px;
+  left: 189px;
+  
+  
+}
+
+.circle2{
+  border:2px solid black;
+  border-radius: 50%;
+  width: 10px;  
+  height: 10px;
+  background-color: yellowgreen;
+  margin :22px; 
+  animation:  rotate 0.3s linear infinite 1s; }
+ 
+.Header {
   background-color: #282c34;
+  margin:0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +86,36 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}   
+
+.track {
+    background-image: url(road.webp);
+    background-repeat: repeat-x;
+    position: absolute;
+  top:400px;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 6s linear infinite;
+}
+
+/* Moving the track backwards */
+@keyframes trackanimation {
+    100% {
+        transform: translate(-500vw);
+    }
+}
+
+.trees {
+ 
+  width: 20px;
+  height:100px;
+  
+  
+  animation: moving 3s linear infinite 1s;
+}
+.trees img {
+  width: 100vw;
+  height: 80vh;
 }
 
 .App-link {
@@ -33,19 +127,107 @@
   padding:40px;
 }
 .dropDownContent{
-  
+  display:flex;
+  flex-direction:column;
   width: max-content;
   padding: 20px;
+  align-items: flex-start;
+  margin:20px;
+  margin-left:350px;
+  right:400px;
+  margin-top:1px;
   
+  
+}
+.date-input{
+  margin-left:auto;
 }
 .middleContent{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 44pt;
-  background-image: url('./R.jpg');
-  height:20rem;
+  background-image: url('dd.gif');
+
+  /* background-image: url('./R.png');
+  background-color: black;
+  animation: mymove 7s infinite normal ease-in-out;
+  -webkit-animation: mymove 7s infinite normal ease-in-out; */
 }
+
+/* Add this CSS to your App.css file */
+.background-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44pt;
+  position: relative;
+ 
+  width: 100%;
+  flex: grow 2;
+   /* Place it behind other content */
+  background: url('R.png') no-repeat; /* Replace 'bus-image.png' with your bus image */
+  background-size: auto; /* Use 'cover' for the second image and 'auto' for the first image */
+  background-color: black;
+  background-position:top 100px left;
+  height: 80vh;
+  
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.car-body {
+  height: 130px;
+  position: absolute;
+  left: 38.5vw;
+  bottom: 13.5vh;
+  z-index: 30;
+}
+
+.wheel-1 {
+  height: 70px;
+  position: absolute;
+  left: 581.5px;
+  top: 510px;
+  z-index: 30;
+  animation:  rotate 0.3s linear infinite 1s;
+}
+
+.wheel-2 {
+  position: absolute;
+  height: 70px;
+  left: 859px;
+  top: 510px;
+  z-index: 30;
+  animation:  rotate 0.3s linear infinite 1s;
+}
+
+@keyframes rotate {
+ 0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 
 .go{
   display: inline-block;
@@ -59,12 +241,15 @@
 border-radius: 20px;
 cursor: pointer;
 transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+position:relative;
+top:200px;
+right:400px;
   }
 
   .go:hover{
     background-color: green;
     transform: scale(1.05);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+   
   }
   .go:active{
     transform: scale(0.95);

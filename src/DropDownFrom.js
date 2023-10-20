@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 
 import axios from 'axios';
+import './Dropdown.css';
 
 
 export default function DropDownFrom({handleFromChange}) {
@@ -26,8 +27,9 @@ const handleChange=(e)=>{
     <div className='dropDownContent' >
         <select value={fromValue} onChange={handleChange}>
           {cityNames.map((item,index)=>(<option key={index}>{item}</option>))}
-          
+
         </select>
+      
       </div>
   )
 }

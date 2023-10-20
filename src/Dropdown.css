@@ -1,0 +1,32 @@
+select{
+    width:150px;
+    height:auto;
+    background-color: cornsilk;
+    border:none;
+    appearance: none;
+    transition: transform 0.3 ease;
+}
+option{
+    background:#c9c9c9;
+    border-radius: 10px;
+    transform:translateY(0);
+    opacity:0;
+    transition:0.6 ease;
+    color:#101010;
+}
+select :hover{
+    background-color: green;
+}
+option :hover{
+    background-color: darkcyan;
+}
+select :active{
+    transform: rotate(180deg);
+   
+}
+.icon :active{
+    transform:translateY(-50%) rotate(0deg)
+}
+.icon{
+    
+}

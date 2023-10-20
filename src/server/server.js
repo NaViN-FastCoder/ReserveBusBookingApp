@@ -4,6 +4,7 @@ const busVendorInputApp=require('../Paths/busVendorInput');
 const DisplayingInputs=require('../Paths/DisplayingInputs');
 const dropdownn=require('../Paths/dropdownn');
 const Temp2=require('../Paths/Temp2');
+const savebookings=require('../Paths/SavedBookings');
 const {MongoClient} =require('mongodb');
 
 
@@ -38,5 +39,6 @@ app.use('/', busVendorInputApp);
  app.use('/',DisplayingInputs);
 app.use('/',dropdownn);
     app.use('/',TripDetailsByDate);
+    app.use('/',savebookings);
 app.use('/',Temp2);
 app.listen(8000)

@@ -1,0 +1,94 @@
+
+
+
+/* App.css */
+div .Header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+  }
+  .background-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 44pt;
+    position: relative;
+   
+    width: 100%;
+    flex: grow 2;
+     /* Place it behind other content */
+    background: url('R.png') no-repeat; /* Replace 'bus-image.png' with your bus image */
+    background-size: auto; /* Use 'cover' for the second image and 'auto' for the first image */
+    background-color: black;
+    background-position:top 100px left;
+    height: 83vh;
+    
+   
+    
+  }
+  .text {
+    display:flex;
+    animation:move 1s infinite;
+    transition:move .8s ease-in;
+   position:absolute;
+    color:yellow;
+    top:30px;
+    left:20px;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); 
+     }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .dropDownContent{
+    display:flex;
+    flex-direction:column;
+    width: max-content;
+    padding: 20px;
+    align-items: flex-start;
+    margin:20px;
+    margin-left:350px;
+    right:400px;
+    margin-top:1px;
+    
+    
+  }
+  .date-input{
+    margin-left:auto;
+  }
+
+  
+.go{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color:#fff;
+    border:none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  position:relative;
+  
+    }
+  
+    .go:hover{
+      background-color: green;
+      transform: scale(2.00);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .go:active{
+      transform: scale(0.95);
+      box-shadow: none;
+    }
